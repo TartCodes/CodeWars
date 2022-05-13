@@ -5,3 +5,9 @@ function isPalindrome(x) {
   const palin = x.split('').reverse().join('')
   return (palin === x) ? true : false
 }
+
+//OR
+
+const isPalindrome = (x) => {
+  return x.split("").reverse().join("").toLowerCase() === x.toLowerCase() ? true : false
+}
