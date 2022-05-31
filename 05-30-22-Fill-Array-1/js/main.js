@@ -1,14 +1,18 @@
-// Complete the function which takes two arguments and returns 
-//all numbers which are divisible by the given divisor. First argument is an array of numbers and the second is the divisor.
+// We want an array, but not just any old array, an array with contents!
 
-// Example
-// divisibleBy([1, 2, 3, 4, 5, 6], 2) == [2, 4, 6]
+// Write a function that produces an array with the numbers 0 to N-1 in it.
 
-function divisibleBy(numbers, divisor){
-  return numbers.filter(nums => nums % divisor === 0)
+// For example, the following code will result in an array containing the numbers 0 to 4:
+
+// arr(5) // => [0,1,2,3,4]
+// Note: The parameter is optional. So you have to give it a default value.
+
+
+
+const arr = N => {
+  const newArr = []
+  for(let i = 0; i < N; i++){
+    newArr.push(i)
+  }
+  return newArr
 }
-
-//p two params, 1 an array of numbers, the other a single interger
-//r return numbers that are divisible by divisor 
-//e 1 2 3 4 5 6 -> 2 -> 2 4 6
-//p take the aray of numbers and test if they are divis by a given number, return those 
