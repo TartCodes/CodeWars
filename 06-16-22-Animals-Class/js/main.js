@@ -49,7 +49,7 @@ class Shark extends Animal {
 	// Do the same here as you did for Shark - define your constructor function and any other methods you need
 	constructor(name,age,status) {
 	super(name,age)
-  this.status = status
+  	this.status = status
 	this.legs = 4
 	this.species = 'cat'
   }
