@@ -18,3 +18,7 @@ function alternate(n, firstValue, secondValue){
   }
   return newArr
 }
+
+or
+
+const alternate = (n, firstValue, secondValue) => Array.from({length: n}, (_,i) => !(i % 2) ? firstValue : secondValue )
