@@ -23,3 +23,9 @@ function openOrSenior(data){
   })
   return result
 }
+
+or 
+
+function openOrSenior(data){
+  return data.map(([age, handi]) => (age >= 55 & handi > 7) ? 'Senior' : 'Open')
+ }
