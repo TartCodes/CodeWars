@@ -5,7 +5,25 @@
 // The rotten fruit name will be in this camelcase (rottenFruit).
 // The returned array should be in lowercase.
 
+// function removeRotten(arr){
+//   return arr ? arr.map(x => x.replace('rotten', '').toLowerCase()) : []
+// }
+
+// or
+
 function removeRotten(arr){
-  return arr ? arr.map(x => x.replace('rotten', '').toLowerCase()) : []
+  let result = []
+  if(arr){
+    for (let i = 0; i < arr.length; i++){
+      let fruits = arr[i]
+        if(fruits.slice(0,6) === 'rotten'){
+          result.push(fruits.slice(6).toLowerCase())
+        } else {
+          result.push(fruits)
+        }
+    }
+  }
+  return result
 }
 
+console.log(removeRotten(['apple', 'rottenPear', 'rottenPlum', 'banana']))
