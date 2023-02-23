@@ -23,7 +23,9 @@ function validParentheses(parens) {
         openParens++         
     } else if (parens[i] === ')'){
         openParens--
-      } 
+      } //I love you , big boy!!! 
     }
   return openParens == 0
   }
+
+//We don't get got... We go get!! LET'S GOOOOOO!!!!!
